@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./ -name "*.js" | rev | cut -d '/' -f1 | rev | cut -f 1 -d '.' | LC_ALL=C sort -f 
+find ./ -name "*.js" -exec ls -a {} \; | rev | cut -d '/' -f1 | rev | cut -f 1 -d '.' | LC_ALL=C sort -f
