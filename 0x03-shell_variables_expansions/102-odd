@@ -1,2 +1,2 @@
 #!/bin/bash
-perl -lne '$.%2 or print;' 
+xargs -n2 | awk '{print $NF}'
