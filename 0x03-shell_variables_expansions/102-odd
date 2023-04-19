@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n input_file | cut -f 1,3- -d ' ' | grep -vE '^[ \t]*$'
+cat -n | cut -f 1,3- -d ' ' | grep -vE '^[ \t]*$'
