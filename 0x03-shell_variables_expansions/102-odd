@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -n '' | paste -d '\n' - - | cut -f 2- -d ':'
+cat -n input_file | cut -f 1,3- -d ' ' | grep -vE '^[ \t]*$'
